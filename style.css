@@ -3,30 +3,37 @@ html, body {
 	background-position: center;
 	color: #000;
 	margin: 0;
-	padding: 0; }
+	padding: 0;
+border:0;
+  background-image:url('https://webkod.pl/images/para1.png'),
+                   url('https://webkod.pl/images/para2.png'),
+                   url('https://webkod.pl/images/para3.png');
+animation:ruch 300s linear infinite alternate;
+position: absolute; top: -10px; z-index: 0; 
+}
+
+@keyframes ruch
+{
+  0% { background-position:0 0, 0 0, 0 0; }
+  100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+}
 
 #top {
-	margin:0 auto;
+	margin: 150px;
 	font-family: arial, helvetica, verdana, sans-serif;
 	font-size: 15px;
 	width: 1000px;
-	background-color: #9575CD; }
+	background-color: #D1C4E9; }
 
 #NAGLOWEK {
-	width: 1000px; margin: 0; padding: 0; height: 115px; background-color: #7E57C2; }
+	width: 1000px; margin: 0px; padding: 0; height: 115px; background-color: white }
 
 #MENU {
-	width: 950px; height: 50px; text-align: center; background-color: lilac; padding: 25px; }
-
-#MENU a {
-	background-color: rose; color: lavender; padding: 5px }
-
-#MENU a:hover {
-	background-color red; color: red; padding: 5px; }
+	width: 950px; height: 45px; text-align: center; background-color: #D1C4E9; padding: 0; }
 
 #KOLUMNA_LEWA {
 	clear: both;
-	width: 660px;
+	width: 260px;
 	float: left;
 	overflow: hidden;
 	background-color: #D1C4E9; 
@@ -34,20 +41,57 @@ html, body {
 	padding: 20px; }	
 
 #KOLUMNA_PRAWA {
-	width:260px;
+	width:660px;
 	float: right;
 	overflow: hidden;
 	background-color: #EDE7F6; 
-	margin: 0;
+	margin: 0px;
 	padding: 20px; }
 
 #STOPKA {
     width: 970px; height: 50px; clear: both; background-color: #673AB7; color: black; font-size: 15px; padding: 15px}
 
+
+
+  #menu {
+	float:right;
+        list-style-type:none;
+        margin:0 auto;
+        Padding:25px;
+        height:64px;
+        width:440px;
+      }
+
+      #menu li {
+        float:left;
+        margin-left:15px;
+      }
+
+      #menu li:first-child {
+        margin-left:125px;
+      }
+
+      #menu li a {
+        display:block;
+	text-indent:-99999px;
+        width:64px;
+        height:64px;
+        background-image:url('https://webkod.pl/images/all_icons.png');;
+      }
+#menu #wikipedia a {}
+      #menu #facebook a { background-position:-256px 0; }
+      #menu #share a { background-position:0 -64px; }
+      #menu #twitter a { background-position:-128px -64px; }
+
+      #menu #wikipedia a:hover { background-position:-64px 0; }
+      #menu #facebook a:hover { background-position:-320px 0; }
+      #menu #share a:hover { background-position:-64px -64px; }
+      #menu #twitter a:hover { background-position:-194px -64px; }
+
 ol {
   list-style-type:none;
-  padding:0;
-  margin:0;
+  Padding:0px;
+  Margin:7px;
   font-size:18px;
   height:2em;
   line-height:2em;
@@ -55,25 +99,21 @@ ol {
 }
 
 ol > li {
-  float:left;
-  background-color:#FDD700;
+  Float:left;
+  background-color: white;
   width:150px;
 margin-left:1px;
 }
 
-ol > li:first-child {
-  margin-left:0;
-}
-
 ol a {
   display:block;
-  color:#000;
+  color: black;
   text-decoration:none;
-  padding:0 5px;
+  Padding:0 5px;
 }
 
 ol > li > a:hover {
-  color:#09C;
+  color: purple;
 }
 
 ol > li:hover {
@@ -82,8 +122,12 @@ ol > li:hover {
 
 ol > li > ul {
   list-style-type:none;
-  padding:0;
-  margin:0;
+  Padding:0;
+  Margin:0;
+}
+
+ol > li:first-child {
+  Margin-left:31px;
 }
 
 ol > li > ul > li > a {
@@ -101,11 +145,6 @@ ol > li > ul > li {
 ol > li > ul > li:hover {
   background-color:#DDD;
 }
-
-ol > li > ul > li:hover a {
-  color:#09C;
-}
-
 ol > li > ul {
   display:none;
 }
@@ -113,3 +152,9 @@ ol > li > ul {
 ol > li:hover > ul {
   display:block;
 }
+
+ol > li > ul > li:hover a {
+  color: purple;
+}
+
+
